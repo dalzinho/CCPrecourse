@@ -1,0 +1,18 @@
+def fizzbuzz(fizz, buzz, max)
+  (1..max).each do |n|
+    if n % fizz == 0 && n % buzz == 0
+      puts "fizzbuzz"
+    elsif n % fizz == 0
+      puts "fizz"
+    elseif n % buzz == 0
+      puts "buzz"
+    else
+      puts n
+    end
+
+    sleep(1)
+
+end
+
+puts
+
