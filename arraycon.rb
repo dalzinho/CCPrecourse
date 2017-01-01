@@ -1,11 +1,8 @@
 a = ["a", "b", "c"]
 b = [1, 2, 3]
 c = []
+counter = 0
 
-a.each do |letter|
-  b.each do |number|
-    c << letter, number
-  end
-end
+c = a.zip(b).flatten
 
 print c
